@@ -24,3 +24,8 @@ parts:
       cd contrib
       make
       make install DESTDIR=$SNAPCRAFT_PART_INSTALL
+    stage:
+      # headers
+      - -usr/local/pgsql/include
+      # examples
+      - -usr/local/share/doc
